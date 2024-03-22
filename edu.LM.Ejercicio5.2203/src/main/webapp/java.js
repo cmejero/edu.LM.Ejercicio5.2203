@@ -9,15 +9,19 @@ function triangulo() {
 	let escrito = "";
 	let fila = "";
 
-	for (let i = 1; i <= numeroUsuario; i++) {
+
+     if(numeroUsuario>0){
+	for (let i = 0; i < numeroUsuario; i++) {
 		
-		numeroUsuario = numeroUsuario + "*";
+		
 		 fila = fila + "*";
 		 escrito= escrito + fila + "<br>";
 		 
+		 
+		 
 		 }
-		 document.getElementById("texto").innerHTML = ("<br>" + escrito + "</br>");
-		
+		 document.getElementById("texto").innerHTML = escrito ;
+		}
 		
 		
 		
